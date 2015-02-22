@@ -52,4 +52,12 @@ var MyApp = MyApp || {};
             return this;
         }
     });
+
+    MyApp.NotTestedView = Backbone.View.extend({
+        render: function () {
+            this.$el.html('Not covered by tests');
+
+            return this;
+        }
+    });
 }());
